@@ -20,15 +20,15 @@ Feel free to fork this document and update it with information you feel others w
      - Git is the version control software you will be required to use
      - Nextflow is a domain specific language for creating software pipelines
      - Open a terminal
-   - ```
-     sudo apt-get update
-     sudo apt-get upgrade
-     sudo apt-get install git
-     sudo apt-get install default-jdk
-     cd /usr/bin/local
-     sudo wget -qO- https://get.nextflow.io | bash
-     cd
-     ```
+       - ```
+         sudo apt-get update
+         sudo apt-get upgrade
+         sudo apt-get install git
+         sudo apt-get install default-jdk
+         cd /usr/bin/local
+         sudo wget -qO- https://get.nextflow.io | bash
+         cd
+         ```
    - [Visual Studio Code](https://code.visualstudio.com/download)
      - This is our recommended code editor. It is light weight and versatile with many extensions that are very useful for us.
      - Install the following extensions (open the extension pane with Ctrl+Shift+x)
@@ -57,3 +57,16 @@ Feel free to fork this document and update it with information you feel others w
 
 3. Setup Github
    - You are required to use a public Github repository for version control and collaboration to participate in the Hackathon
+   - [Here](https://guides.github.com/activities/hello-world/) is a guide to getting started with your first Github Repository
+   - [Here](https://guides.github.com/introduction/flow/) is a guide to understanding the Github workflow
+   - You are required to make your Github repository a public repository this way the Hackathon Judges will be able to inspect your code, including all your commits so that we can see how the code was developed, we may do this during the competition
+     - Your final commit on the last day of the competition will be the one judged
+   - In the first three days of the competition you are required to send us the URL for your Github repository, we will not share this with the other competitors.
+   - It is recommended that you use SSH keys to push commits to your Github repository
+     - [Here](https://help.github.com/articles/connecting-to-github-with-ssh/) is a guide for doing so
+       - VS Code cannot handle SSH keys that require passphrases so do not use one, leave it blank
+       - If on Ubuntu you can setup your .bashrc to load the ssh-agent when a terminal is opened and add your ssh key to it
+         - ```echo "eval `ssh-agent`
+              ssh-add ~/.ssh/id_rsa" >> ~/.bashrc
+           ```
+      
