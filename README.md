@@ -20,15 +20,15 @@ Feel free to fork this document and update it with information you feel others w
      - Git is the version control software you will be required to use
      - Nextflow is a domain specific language for creating software pipelines
      - Open a terminal
-```
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install git
-sudo apt-get install default-jdk
-cd /usr/bin/local
-sudo wget -qO- https://get.nextflow.io | bash
-cd
-```
+   - ```
+     sudo apt-get update
+     sudo apt-get upgrade
+     sudo apt-get install git
+     sudo apt-get install default-jdk
+     cd /usr/bin/local
+     sudo wget -qO- https://get.nextflow.io | bash
+     cd
+     ```
    - [Visual Studio Code](https://code.visualstudio.com/download)
      - This is our recommended code editor. It is light weight and versatile with many extensions that are very useful for us.
      - Install the following extensions (open the extension pane with Ctrl+Shift+x)
@@ -49,9 +49,11 @@ cd
          - Make sure to turn on flake8, pep8, pylint, and pydocstyle linting in the extension's settings. Manage > Settings > Extensions > Python.
            - This will warn you when you are writing poorly formatted code.  It might take some time to figure out what you are doing wrong but proper style is an important factor in the hackathon.
            - You will also have to install some of these but VS code will prompt you to do this when you save a python file.
-   - Docker
-     - Guide [here](https://docs.docker.com/install/linux/docker-ce/ubuntu/) for Docker CE
-     - You also need to install [docker-compse](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+   - [Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+   - [docker-compse](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
      - You then need to give your USER account docker permission
 `sudo usermod -a -G docker $USER`
    - Restart Ubuntu
+
+3. Setup Github
+   - You are required to use a public Github repository for version control and collaboration to participate in the Hackathon
