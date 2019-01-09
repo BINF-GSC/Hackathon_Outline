@@ -96,5 +96,5 @@ Feel free to fork this document and update it with information you feel others w
 2. Hackathon Expectations
    - You are not required to use Nextflow but it is recommended, projects that use it will have an advantage in the competition
    - If you have a different preferred workflow language like Snakemake you are free to use that as well, this will be given the same weight as Nextflow
-   - We would like to see you create your pipelines from scratch but you are free to use publicly available pipelines as guides you are not permitted to use these in whole. Please indicate in the comments at the top of your pipeline those publicly available pipelines you referenced the most.
+   - You must create your pipelines from scratch. However, you are free to refer to publicly available pipelines as guides. Any direct plagiarism will result in disqualification from the competition. Indicate in the comments at the top of your pipeline those publicly available pipelines you referenced the most.
 
