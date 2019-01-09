@@ -5,13 +5,13 @@ Feel free to fork this document and update it with information you feel others w
 ## Environment Setup
 1. Install Ubuntu
    - You don't have to use Ubuntu, you are free to try any other operating system but our recommendation is Ubuntu and these instructions are based on Ubuntu
-     - Nextflow does not work on Windows, you can use the Windows 10 Linux subsystem with ubuntu bash but you can't run a docker daemon within it. One work around is to communicate with a Windows 10 docker daemon from the Linux subsystem but you will run into issues with mount paths for data between the Linux subsystem and the expectations of the Windows 10 Docker daemon that I am not sure how to solve
-     - Other workflow languages (Snakemake, CWL, etc.) also do not appear to work on Windows but you are free to try
+     - Nextflow does not work on Windows, you can use the Windows 10 Linux subsystem with Ubuntu bash but you can't run a Docker daemon within it. One work around is to communicate with a Windows 10 Docker daemon from the Linux subsystem but you will run into issues with mount paths for data between the Linux subsystem and the expectations of the Windows 10 Docker daemon that may not be possible to fix
+     - Other workflow languages (Snakemake, CWL, etc.) also do not work on Windows but you are free to try
    - You have a few options for installation
      - As the sole operating system on your machine (come over to the sunny side)
      - Dual boot (if you just can't make a commitment)
-     - In a VM (if you just aren't ready for more than a temporary relationship)
-       - Recommend Virtual Box on Win 10
+     - In a VM (if you just aren't ready for more than a temporary fling)
+       - Recommend Virtual Box on Win 10 for this route
          - [Here](https://linuxhint.com/install_ubuntu_18-04_virtualbox/) is a guide, others can be found using google
        - Be aware that computations will be slower using this option since you will be sharing hardware with the underlying OS (less RAM, fewer cores available)
     - [Here](https://linuxconfig.org/how-to-install-ubuntu-18-04-bionic-beaver) is a guide for downloading and installing Ubuntu
@@ -19,6 +19,7 @@ Feel free to fork this document and update it with information you feel others w
    - Git, Java, Nextflow
      - Git is the version control software you will be required to use
      - Nextflow is a domain specific language for creating software pipelines
+     - Java is a runtime environment that makes programs portable across hardware platforms without having to worry about the specifics (Nextflow runs on it)
      - Open a terminal
        - ```
          sudo apt-get update
@@ -70,7 +71,8 @@ Feel free to fork this document and update it with information you feel others w
            echo "eval `ssh-agent`
            ssh-add ~/.ssh/id_rsa" >> ~/.bashrc
            ```
-    - VS Code integrates with Git and Github you can stage commits, push, using the source control pane (Ctrl+Shift+G) and resolve pull requests
+           - your private key file may have a different name than id_rsa, make sure to use the correct one
+    - VS Code integrates with Git and Github allowing you to perform all Git actions using a the source control pane (Ctrl+Shift+G) and even resolve pull requests
 
 ## Using Docker
 1. Understanding Docker
@@ -78,22 +80,22 @@ Feel free to fork this document and update it with information you feel others w
    - [Here](https://docs.docker.com/get-started/) is a guide for getting started with Docker, you only need concern yourself with the first two parts
 2. Hackathon Expectations
    - Using Docker is not required for the competition but it is recommended, projects that employ Docker will have an advantage in the competition
-   - In using Docker we would like to see you create your own Docker images from a base OS. You are free to use pre-made containers in whole or as guides though, original containers will be given more weight in the judgement.
+   - In using Docker we would like to see you create custom Docker images from a base image. You are free to use pre-made containers in whole or as guides. However, original containers will be given more weight in the judgement.
      - Examples of bioinformatics containers can be found [here](https://biocontainers.pro/). The council has also built some example containers which are up on our [Github](https://github.com/BINF-GSC)
      - Create a dockerfile and build locally or integrate your Github with [Dockerhub](https://docs.docker.com/docker-hub/) and have your containers online ready to be used anywhere with a simple download
 
 ## Using Nextflow
 1. Understanding Nextflow
    - [Nextflow](https://www.nextflow.io/) is a domain specific language (DSL) designed to make writing and executing analytical pipelines simple, robust, and reproducible.
-     - The same pipeline can be used be on your local machine, on Compute Canada HPCs, and on cloud services like AWS just by changing the configuration file!
+     - The same pipeline can be used be on your local machine, on Compute Canada HPCs, and on cloud services like Amazon Web Services just by changing the configuration file!
      - These pipelines remember where in the analysis you were so that previously completed steps are not repeated in case of premature stopping of the analysis due to errors or if proceeding steps are modified.
-     - It works using two simple concepts channels and processes
+     - It works using two simple concepts: channels and processes
        - A channel contains the input files for processes, either sourced from disk or the output of a previous process
        - A process processes the files in some way (read quality control, alignment, etc.) and outputs the results. Any arbitrary program or language can be used.
      - Documentation can be found [here](https://www.nextflow.io/docs/latest/index.html)
-     - There are many example pieplines for bioinformatic analyses available online [e.g.](https://github.com/nextflow-io/patterns)
+     - There are many example pipelines for bioinformatic analyses available online [e.g.](https://github.com/nextflow-io/patterns)
 2. Hackathon Expectations
    - You are not required to use Nextflow but it is recommended, projects that use it will have an advantage in the competition
-   - If you have a different preferred workflow language like Snakemake you are free to use that as well, this will be considered the same as Nextflow
-   - We would like to see you create your pipelines from scratch but you are free to use publicly available pipelines in whole or as guides, original pipelines will be given greater weight in the judgement. If you use publicly available pipelines make sure to indicate this in a comment at the top of you pipeline file.
+   - If you have a different preferred workflow language like Snakemake you are free to use that as well, this will be given the same weight as Nextflow
+   - We would like to see you create your pipelines from scratch but you are free to use publicly available pipelines as guides you are not permitted to use these in whole. Please indicate in the comments at the top of your pipeline those publicly available pipelines you referenced the most.
 
