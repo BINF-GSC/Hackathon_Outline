@@ -51,7 +51,7 @@ Feel free to fork this document and update it with information you feel others w
            - This will warn you when you are writing poorly formatted code.  It might take some time to figure out what you are doing wrong but proper style is an important factor in the hackathon.
            - You will also have to install some of these but VS code will prompt you to do this when you save a python file.
    - [Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-    - You need to give your USER account docker permission `sudo usermod -a -G docker $USER`
+     - You need to give your USER account docker permission `sudo usermod -a -G docker $USER`
    - [docker-compse](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
    - Restart Ubuntu
 
