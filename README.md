@@ -59,9 +59,9 @@ Feel free to fork this document and update it with information you feel others w
    - As a team you are required to use a single public Github repository for version control and collaboration to participate in the Hackathon
    - [Here](https://guides.github.com/activities/hello-world/) is a guide to getting started with your first Github Repository
    - [Here](https://guides.github.com/introduction/flow/) is a guide to understanding the Github workflow
-   - You are required to make your Github repository a public repository. This way the Hackathon Judges will be able to inspect your code, including all your commits so that we can see how the code was developed, we may do this during the competition
-     - Your final commit on the last day of the competition will be the one judged
-   - In the first three days of the competition you are required to send us the URL for your Github repository, we will not share this with the other competitors.
+   - You are recommend to make your Github repository private so that you can collaborate in private.
+   - At the end of the competition (March 10th) you must make your repository public and send the URL to the council (whargrea@uoguelph.ca) so that the judges can inspect your work.
+     - The last commit on March 10th (before midnight) will be the one judged.
    - It is recommended that you use SSH keys to push commits to your Github repository
      - [Here](https://help.github.com/articles/connecting-to-github-with-ssh/) is a guide for doing so
        - VS Code cannot handle SSH keys that require passphrases so do not use one, leave it blank
@@ -70,8 +70,8 @@ Feel free to fork this document and update it with information you feel others w
            echo "eval `ssh-agent`
            ssh-add ~/.ssh/id_rsa" >> ~/.bashrc
            ```
-           - your private key file may have a different name than id_rsa, make sure to use the correct one
-    - VS Code integrates with Git and Github allowing you to perform all Git actions using a the source control pane (Ctrl+Shift+G) and even resolve pull requests
+           - Your private key file may have a different name than id_rsa, make sure to use the correct one
+    - VS Code integrates with Git and Github allowing you to perform all Git actions using the source control pane (Ctrl+Shift+G) and even resolve pull requests
 
 ## Using Docker
 1. Understanding Docker
