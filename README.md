@@ -52,7 +52,7 @@ Feel free to fork this document and update it with information you feel others w
            - You will also have to install some of these but VS code will prompt you to do this when you save a python file.
    - [Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
      - You need to give your USER account docker permission `sudo usermod -a -G docker $USER`
-   - [docker-compse](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+   - [docker-compose](https://docs.docker.com/compose/install/)
    - Restart Ubuntu
 
 3. Setup Github Repository and Access
